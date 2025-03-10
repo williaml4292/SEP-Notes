@@ -1,0 +1,38 @@
+---
+
+---
+<head>
+    {% include bootstrap-required.html %}
+<style>
+    nav ul {
+        display: flex;
+        background-color: cyan;
+    }
+    nav ul li {
+        margin-right: 10vw;
+        background-color: lightgreen;
+        border: black 5px dotted;
+    }
+    nav ul li a {
+        font-size:1.5vw;
+        color: green;
+    }
+    nav ul li a:hover {
+        text-decoration: underline;
+        color:blue;
+    }
+</style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li> <a href="/"> Home</a></li>
+        <li> <a href="/First-Post/"> First-Post</a></li>
+        <li> <a href="/welcome-to-jekyll/">Welcome to Jekyll (DEFAULT)</a> </li>
+        <li> <a href="/layout-test/"> Layout Test</a></li>
+        <li> <a href="/bootstrap/"> Bootstrap Test</a></li>
+    </ul>
+</nav>
+<hr>
+{{ content }}
+</body>
