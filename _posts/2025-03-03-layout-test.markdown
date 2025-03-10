@@ -1,6 +1,6 @@
 ---
 title: "Layout-Test"
-layout: page
+layout: post
 date:   2025-02-24 14:09:28 -0500
 categories: test
 permalink: /layout-test/

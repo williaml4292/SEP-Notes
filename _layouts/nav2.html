@@ -1,8 +1,6 @@
----
 
----
 <head>
-  {% include bootstrap-required.html %}
+  {% include bootstrap-head-required.html %}
 
 <style>
     nav ul {
@@ -11,16 +9,21 @@
     nav ul li {
         margin-right: 5vw;
         border: black 5px dotted;
-        background-color: blue !important;
+        background-color: lightgreen;
     }
     nav ul li a {
         font-size:1vw !important;
-        color: lightgreen !important;
+        color: black !important;
         text-align:center;
     }
     nav ul li a:hover {
         text-decoration: underline !important;
         color:blue !important;
+    }
+    @media (max-width:700px){
+      nav ul li a {
+       font-size:3vw !important;
+      }
     }
 </style>
 </head>
@@ -42,7 +45,7 @@
           <a class="nav-link" href="/First-Post/">My First Post</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/layout-test/"></a> First Test of Layouts</a>
+          <a class="nav-link" href="/layout-test/">First Test of Layouts</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/bootstrap"> First test of Bootstrap in Jekyll</a>
@@ -56,22 +59,22 @@
             Dropdown
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="/welcome-to-jekyll/">Welcome to Jekyll</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="/First-Post/">My First Post</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="/layout-test/">My layout Test</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="/bootstrap/">Bootstrap on Jekyll</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+            <a class="dropdown-item" href="/bootstrap-nav-test/">Navigation v2</a>
         </li>
 
       </ul>
     </div>
   </nav>
 
-      {{ content }}
+     {{ content }}
 
+    {% include bootstrap-body-required.html %}
 </body>
