@@ -8,3 +8,5 @@ permalink: /First-Post/
 # Hello!
 ## This is my first post with Jekyll.
 Post
+{% assign var_1 = 1 %}
+{{ var }}
