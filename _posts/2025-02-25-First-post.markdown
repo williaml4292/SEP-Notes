@@ -8,5 +8,26 @@ permalink: /First-Post/
 # Hello!
 ## This is my first post with Jekyll.
 Post
-{% assign var_1 = 1 %}
-{{ var }}
+{% assign var_1 = "6" %}
+{% increment var_1 %}
+
+{% increment var_1 %}
+{{ var_ 1 }}
+{{ var_1 }}
+
+{% increment var_1 %}
+{% increment var_1 %}
+
+{% if var_1 == "3" %}
+The variable is equals to 3.
+{% else %}
+No
+{% endif %}
+
+{% assign var_1 ="3" %}
+{% if var_1 == "3" %}
+The variable is equals to 3.
+{% else %}
+No
+{% endif %}
+{{ Hi | downcase }}
