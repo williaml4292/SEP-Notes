@@ -12,9 +12,13 @@ layout: nav2
 <h1 class="center"> This is a post</h1>
 {% if page.title contains "Jekyll" %}
 <strong> This page's title contains "Jekyll" </strong>
-{% assign var_2 = "2"}
 {% else %}
 This page does not contain "Jekyll"
 {% endif %}
+
+{% if page.categories contains "jekyll" %}
+{% assign var_5 = "hello" %}
+{% endif %}
+
 {{ content }}
 </body>
