@@ -19,5 +19,18 @@ This page does not contain "Jekyll"
 {% if page.categories contains "jekyll" %}
 {{ var_2 }}
 {% endif %}
+
+
+
+{% for categories in page.categories %}
+{% if categories contains "Testing" %}
+{{ categories }}
+{% else %}
+<h3> Does not contain "Testing" </h3>
+{% endif %}
+{% endfor %}
+
+
+
 {{ content }}
 </body>

@@ -2,7 +2,7 @@
 layout: post
 title:  "My first post!"
 date:   2025-02-24 14:09:28 -0500
-categories: First post
+categories: First-post, Testing
 permalink: /First-Post/
 ---
 # Hello!
@@ -39,10 +39,20 @@ No
 
 {% assign numbers_2 = "food, 2, 3" | split: ", " %}
 
-{% for numbers in numbers_2 %}
+{%- for numbers in numbers_2% -%}
 
-    {{ numbers }}{% unless forloop.last %} {% endunless -%}
-
+    {{ numbers }}{% unless forloop.last %}  {% endunless -%}
 {% endfor %}
 
 {{ numbers_2 }}
+
+Normal MD text
+<br>
+
+{% for categories in page.categories | concat numbers_2 %}
+{% if categories contains "Testing" %}
+{{ categories }}
+{% else %}
+No
+{% endif %}
+{% endfor %}

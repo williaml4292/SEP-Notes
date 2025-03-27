@@ -2,7 +2,7 @@
 layout: post
 title:  "Jekyll Summary"
 date:   2025-02-24 14:09:28 -0500
-categories: jekyll update
+categories: jekyll-update
 permalink: /welcome-to-jekyll/
 ---
 {% assign smoothie_flavors = "orange, strawberry, banana" | split: ", " %}
