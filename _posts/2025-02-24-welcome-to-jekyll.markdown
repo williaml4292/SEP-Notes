@@ -5,6 +5,13 @@ date:   2025-02-24 14:09:28 -0500
 categories: jekyll update
 permalink: /welcome-to-jekyll/
 ---
+{% assign smoothie_flavors = "orange, strawberry, banana" | split: ", " %}
+
+{% for flavor in smoothie_flavors -%}
+
+    {{ flavor }}{% unless forloop.last %} - {% endunless -%}
+
+{% endfor %}
 
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
