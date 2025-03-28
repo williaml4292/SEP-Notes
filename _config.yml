@@ -29,19 +29,11 @@ twitter_username: N/A
 github_username:  williaml4292
 
 defaults:
+  -
     scope:
-    path: ""
-    type: "posts"
+      path: "" # an empty string here means all files in the project
     values:
-    layout: "post"
-    author: "Author"
-
-    scope:
-    path: ""
-    type: "pages"
-    values:
-    layout: "page"
-    author: "Author2"
+      layout: "post"
 
 # Build settings
 theme: minima
