@@ -38,7 +38,7 @@ defaults:
 
     scope:
     path: ""
-    type: "page"
+    type: "pages"
     values:
     layout: "page"
     Author: "Author2"
