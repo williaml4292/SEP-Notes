@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "My first post!"
 date:   2025-02-24 14:09:28 -0500
 categories: First-post, Testing
