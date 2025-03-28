@@ -41,8 +41,7 @@ defaults:
     type: "pages"
     values:
     layout: "page"
-    Author: "Author2"
-
+    author: "Author2"
 # Build settings
 theme: minima
 plugins:
