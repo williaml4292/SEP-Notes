@@ -35,23 +35,3 @@ No
   <p> Helllo </p>
    <p> Helllo </p>
 {% endhighlight %}
-
-{% assign numbers_2 = "food, 2, 3" | split: ", " %}
-
-{%- for numbers in numbers_2% -%}
-
-    {{ numbers }}{% unless forloop.last %}  {% endunless -%}
-{% endfor %}
-
-{{ numbers_2 }}
-
-Normal MD text
-<br>
-
-{% for categories in page.categories | concat numbers_2 %}
-{% if categories contains "Testing" %}
-{{ categories }}
-{% else %}
-No
-{% endif %}
-{% endfor %}
