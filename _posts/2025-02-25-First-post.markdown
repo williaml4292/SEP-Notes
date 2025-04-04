@@ -38,9 +38,9 @@ No
 
 {% assign numbers_2 = "food, 2, 3" | split: ", " %}
 
-{%- for numbers in numbers_2% -%}
+{%- for numbers in numbers_2 -%}
 
-    {{ numbers }}{% unless forloop.last %}  {% endunless -%}
+    {{ numbers }}{% unless forloop.last %} - {% endunless -%}
 {% endfor %}
 
 {{ numbers_2 }}
@@ -48,7 +48,7 @@ No
 Normal MD text
 <br>
 
-{% for categories in page.categories | concat numbers_2 %}
+{% for categories in page.categories %}
 {% if categories contains "Testing" %}
 {{ categories }}
 {% else %}
