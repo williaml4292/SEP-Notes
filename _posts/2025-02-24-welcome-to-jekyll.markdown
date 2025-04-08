@@ -4,6 +4,22 @@ date:   2025-02-24 14:09:28 -0500
 categories: jekyll-update
 permalink: /welcome-to-jekyll/
 ---
+{{ page.author }}
+
+This is a second one.
+{% capture author2 %}
+{{ page.author }}, a student from HSTAT.
+{% endcapture %}
+{{ author2 }}
+
+{% assign hobbies = "reading and videogames." %}
+
+{% capture introduction %}
+Hello, my name is {{ author2 }} My hobbies are {{ hobbies }}
+{% endcapture %}
+{{ introduction }}
+
+
 {% assign smoothie_flavors = "orange, strawberry, banana" | split: ", " %}
 
 {% for flavor in smoothie_flavors -%}
@@ -11,7 +27,6 @@ permalink: /welcome-to-jekyll/
     {{ flavor }}{% unless forloop.last %} - {% endunless -%}
 
 {% endfor %}
-
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
