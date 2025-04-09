@@ -8,3 +8,8 @@ LAYOUT
 SOMETHING
 ## Header
 
+{% if page.date contains "055" %}
+2025
+{% elseif page.date contains 02 %}
+02
+{% endif %}
