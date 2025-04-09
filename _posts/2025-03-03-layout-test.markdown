@@ -7,4 +7,7 @@ permalink: /layout-test/
 LAYOUT
 SOMETHING
 ## Header
+<style>
+    background-color:black;
+</style>
 
