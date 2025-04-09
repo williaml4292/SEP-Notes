@@ -7,7 +7,13 @@ permalink: /layout-test/
 LAYOUT
 SOMETHING
 ## Header
+<head>
 <style>
-    background-color:black;
+    *{
+    background-color:grey !important;
+    }
 </style>
-
+</head>
+<body>
+<h1> Hello </h1>
+</body>
